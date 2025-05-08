@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>St Bernadette Catholic Church</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  
+
+  <!-- FullCalendar CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet" />
+  <style>
+    .navbar {
+      background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+
+    /* Use more specific selectors to override Bootstrap without !important */
+    .navbar-dark .navbar-nav .nav-link,
+    .navbar-dark .dropdown-menu .dropdown-item {
+      color: #f8f9fa;
+      transition: background 0.2s, color 0.2s;
+      background: #4e54c8;
+    }
+
+    /* On hover, use a solid color fallback instead of gradient for color */
+    .navbar-dark .navbar-nav .nav-link:hover,
+    .navbar-dark .dropdown-menu .dropdown-item:hover {
+      color: #43cea2;
+      background: transparent;
+      border-radius: 4px;
+    }
+
+    .dropdown-menu {
+      background: #4e54c8;
+      border: none;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .btn-outline-light {
+      border-radius: 20px;
+      padding: 7px 20px;
+    }
+
+    .navbar-toggler {
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <div class="logo-container">
+        <img
+      src="https://img.icons8.com/ios-filled/50/ffffff/church.png"
+      alt="Logo"
+      width="34"
+      height="34"
+      class="me-2"
+    />
+    
+        <h1>St Bernadette</h1>
+    </div>
+    
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    
+    <nav>
+        <ul id="mainMenu">
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">About Us <span class="dropdown-icon">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="#">Our History</a>
+                    <a href="#">Staff</a>
+                    <a href="#">Parish Council</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Services <span class="dropdown-icon">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="#">Mass Times</a>
+                    <a href="#">Confessions</a>
+                    <a href="#">Sacraments</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Resources <span class="dropdown-icon">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="#">Bulletin</a>
+                    <a href="#">Calendar</a>
+                    <a href="#">Faith Formation</a>
+                </div>
+            </li>
+            <li><a href="#">Donations</a></li>
+            <li><a href="#">Become a Parishioner</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="hero">
+  <h2>Welcome to St Bernadette Catholic Church</h2>
+  <button class="hero-btn">Join Our Parish</button>
+</section>
+
+<!-- Mass Times section -->
+<section class="content-section">
+  <h2>Mass Times</h2>
+  <div class="mass-times">
+      <div class="mass-time-card">
+          <h3>Weekday Masses</h3>
+          <p>Monday - Friday: 8:30am</p>
+          <p>Saturday: 9:00am</p>
+      </div>
+      <div class="mass-time-card">
+          <h3>Weekend Masses</h3>
+          <p>Saturday Vigil: 5:00pm</p>
+          <p>Sunday: 8:00am, 10:00am, 12:00pm</p>
+      </div>
+      <div class="mass-time-card">
+          <h3>Holy Days</h3>
+          <p>Vigil: 7:00pm</p>
+          <p>Holy Day: 8:30am, 12:10pm, 7:00pm</p>
+      </div>
+      <div class="mass-time-card">
+          <h3>Confessions</h3>
+          <p>Saturday: 3:30pm - 4:30pm</p>
+          <p>Or by appointment</p>
+      </div>
+  </div>
+</section>
+<section class="content-section youtube-section">
+    <h2>Latest Sermon</h2>
+    <div class="video-container">
+        <iframe class="video" src="https://www.youtube.com/embed/f-dn6ZKCn-4?si=0rgALmZzr-QKz7R4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </iframe>
+    </div>
+    <div class="video-description">
+        <h3>Sunday Sermon: The Parable of the Good Samaritan</h3>
+        <p class="sermon-date">May 5, 2025 | Father Michael Johnson</p>
+        <p>In this week's sermon, Father Michael explores the timeless message of compassion and service to others through the Parable of the Good Samaritan.</p>
+        <a href="#" class="youtube-btn" target="_blank">View All Sermons</a>
+    </div>
+</section>
+   <div class="containerCA">
+    <div class="sectionCA">
+      <h1>Confession Times</h1>
+      <div class="times">Thursday: 11:15am to 12:00pm</div>
+      <div class="times">Saturday: 3:30pm to 4:00pm</div>
+    </div>
+    <div class="sectionCA">
+      <h1>Adoration Times</h1>
+      <div class="times">Fridays: 4:00pm to 5:00pm</div>
+    </div>
+  </div>
+  <div class="CALENDAR">
+  <div class="calendar-container">
+    <h1>Parish Calendar</h1>
+    <div class="calendar-header">
+        <button id="prev-month" class="nav-button">&lt;</button>
+        <div id="month-year" class="month-year">May 2025</div>
+        <button id="next-month" class="nav-button">&gt;</button>
+    </div>
+    
+    <div class="weekdays">
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+    </div>
+    
+    <div id="calendar-grid" class="calendar-grid">
+        <!-- Days will be generated by JavaScript -->
+    </div>
+</div>
+
+<div id="event-tooltip" class="event-tooltip">
+    <div id="event-title" class="event-title"></div>
+    <div id="event-time" class="event-time"></div>
+    <div id="event-description" class="event-description"></div>
+</div>
+           </div>
+<div class="NEWSLETTER">
+           <section class="newsletter">
+            <h2>Stay Updated</h2>
+            <p>Sign up for our weekly newsletter to receive updates about upcoming events, service times, and announcements.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <div class="church-name">St Bernadette Church</div>
+        </section>
+      </div>
+
+      <div class="FOOTER">
+        <footer>
+          <div class="footer-container">
+              <!-- About section -->
+              <div class="footer-section">
+                  <h3>About Us</h3>
+                  <p>St Bernadette Church is a welcoming and inclusive community of faith, dedicated to serving God and our neighbors in love and compassion.</p>
+                  <div class="social-icons">
+                      <a href="#" class="social-icon" aria-label="Facebook">
+                          <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a href="#" class="social-icon" aria-label="Twitter">
+                          <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="#" class="social-icon" aria-label="Instagram">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                      <a href="#" class="social-icon" aria-label="YouTube">
+                          <i class="fab fa-youtube"></i>
+                      </a>
+                  </div>
+              </div>
+              
+              <!-- Contact section -->
+              <div class="footer-section">
+                  <h3>Contact Us</h3>
+                  <div class="contact-info">
+                      <i class="fas fa-map-marker-alt"></i>
+                      <p>123 Thika, Ngoingwa, KE 90210</p>
+                  </div>
+                  <div class="contact-info">
+                      <i class="fas fa-phone"></i>
+                      <p>(555) 123-4567</p>
+                  </div>
+                  <div class="contact-info">
+                      <i class="fas fa-envelope"></i>
+                      <p>info@st bernadettechurch.org</p>
+                  </div>
+                  <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4608.885308770074!2d37.04422395523386!3d-1.0418612240776763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4eb686ce02fd%3A0xb2829857532202be!2sSt%20Bernadette%20Catholic%20Church%20Ngoingwa!5e0!3m2!1sen!2ske!4v1745156036236!5m2!1sen!2ske" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+              </div>
+              
+              <!-- Quick Links section -->
+              <div class="footer-section">
+                  <h3>Quick Links</h3>
+                  <div class="quick-links">
+                      <ul>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> Home</a></li>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> About</a></li>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> Events</a></li>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> Sermons</a></li>
+                      </ul>
+                      <ul>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> Ministries</a></li>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> Give</a></li>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> Gallery</a></li>
+                          <li><a href="#"><i class="fas fa-angle-right"></i> Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+              
+              <!-- Service Times section -->
+              <div class="footer-section">
+                  <h3>Service Times</h3>
+                  <div class="service-time">
+                      <span>Sunday Morning:</span>
+                      <span>9:00 AM</span>
+                  </div>
+                  <div class="service-time">
+                      <span>Sunday Evening:</span>
+                      <span>11:00 AM</span>
+                  </div>
+                  <div class="service-time">
+                      <span>Wednesday Bible Study:</span>
+                      <span>7:00 PM</span>
+                  </div>
+                  <div class="service-time">
+                      <span>Youth Group (Friday):</span>
+                      <span>6:30 PM</span>
+                  </div>
+                  <p style="margin-top: 1rem;">Join us online or in person!</p>
+                  <a href="#" style="color: var(--accent);">View Full Schedule</a>
+              </div>
+          </div>
+          
+          <!-- Bottom section with copyright and developer info -->
+          <div class="footer-bottom">
+              <p>&copy; 2025 St Bernadette Catholic Church. All rights reserved.</p>
+              <div class="developer-info">
+                  <p>Designed and developed with ❤️ by <a href="#" class="developer-link">Vk</a></p>
+                  <p>For website support: webmaster@stbernadettechurch.org</p>
+              </div>
+          </div>
+      </footer>
+      </div>
+      <script>
+        // Mobile menu toggle
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.getElementById('mainMenu').classList.toggle('active');
+        });
+        
+        // Dropdown menu for mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.innerWidth <= 768) {
+                const dropdownLinks = document.querySelectorAll('nav ul li a:not(:only-child)');
+                
+                dropdownLinks.forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        const nextElement = this.nextElementSibling;
+                        
+                        if (nextElement.style.display === 'block') {
+                            nextElement.style.display = 'none';
+                        } else {
+                            const allDropdowns = document.querySelectorAll('.dropdown-content');
+                            allDropdowns.forEach(dropdown => {
+                                dropdown.style.display = 'none';
+                            });
+                            nextElement.style.display = 'block';
+                        }
+                        
+                        e.preventDefault();
+                    });
+                });
+            }
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+  <script src="script2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- FullCalendar JS -->
+   <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
+
+</body>
+</html>
