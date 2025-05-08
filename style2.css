@@ -85,7 +85,7 @@ nav ul li:hover .dropdown-content {
 /* Hero section styles */
 .hero {
   height: 70vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('5.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/20788182/pexels-photo-20788182/free-photo-of-chapel-in-a-church.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
   background-size: cover;
   background-position: center;
   display: flex;
